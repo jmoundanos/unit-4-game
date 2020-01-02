@@ -3,7 +3,8 @@ body{
     font-family: 'Playfair Display', serif;
 }
 h1{
-    color: #5A4D80;
+    color: #362E4D;
+   
     text-align: center;
     padding: 25px;
     font-size: 3rem;
@@ -12,9 +13,52 @@ h2{
     color: #907ACC;
 }
 h3{
-    color: #B499FF;
+    color: #C5BFD5;
 }
 p{
     color: #907ACC;
+    font-size: 1.5rem;
+}
+.img-thumbnail{
+    border: 1px solid black;
+}
+
+#randomNumber{
+    font-size: 50px;
+    text-align: center;
+}
+#randomNumber:after{
+    content: ""; 
+    display: block; 
+    margin: 0 auto; 
+    width: 15%; 
+    padding-top: 10px; 
+    border-bottom: 1px solid black; 
+}
+#currentTotal{
+    font-size: 50px;
+    text-align: center;
+}
+#currentTotal:after{
+    content: ""; 
+    display: block; 
+    margin: 0 auto; 
+    width: 15%; 
+    padding-top: 10px; 
+    border-bottom: 1px solid black; 
+}
+#crystals{
+    padding: 10px 0 10px 0;
+}
+#wins{
+    display: inline-block;
+    padding: 20px;
+    color: #C5BFD5;
+    font-size: 1.5rem;
+}
+#losses{
+    display: inline-block;
+    padding: 20px;
+    color: #C5BFD5;
     font-size: 1.5rem;
 }
