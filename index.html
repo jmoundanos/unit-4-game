@@ -4,11 +4,56 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
     <title>Crystal Collector Game</title>
   </head>
   <body>
-    
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12">
+          <h1>Crystal Collector</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-2"></div>
+        <div class="col-8">
+          <p>How to play this game:</p>
+          <ul>
+            <li>A random number will be displayed at the start of the game</li>
+            <li>Clicking on one of the crystals below will add a specific number of points to the total score</li>
+            <li>The value of the crystal is hidden</li>
+            <li>The value of the crystal will change each time the game starts</li>
+            <li>The game is won by the total score matching the random number</li>
+            <li>The game is lost if the total score exceeds the random number</li>
+          </ul>
+        </div>
+        <div class="col-2"></div>
+      </div>
+      <div class="row">
+        <div class="col-6">
+          <h2>Random number</h2>
+          <h3 id="randomNumber"></h3>
+        </div>
+        <div class="col-6">
+          <h2>Your current total</h2>
+          <h3 id="currentTotal"></h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-3" id="redCrystal"></div>
+        <div class="col-3" id="blueCrystal"></div>
+        <div class="col-3" id="yellowCrystal"></div>
+        <div class="col-3" id="greenCrystal"></div>   
+      </div>
+      <div class="row">
+        <div class="col-4">
+          <p id="wins"></p>
+          <p id="losses"></p>
+        </div>
+      </div>
+    </div>
+
 
     
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
