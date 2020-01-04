@@ -9,11 +9,9 @@ var blueRandom = 0;
 var yellowRandom = 0;
 var greenRandom = 0;
 
-window.onload = function(){
-    var randomNumber = Math.floor(Math.random() * 120) + 19;
-    $("#randomNumber").text(randomNumber);
+var randomNumber = Math.floor(Math.random() * 120) + 19;
+$("#randomNumber").text(randomNumber);
     
-};
 function setCrystals(){
     redRandom = Math.floor(Math.random() * 12) + 1;
     console.log(redRandom);
@@ -31,17 +29,15 @@ function playGame(currentTotal){
     var num1 = $("#randomNumber").text();
     var num2 = currentTotal;
     if(parseInt(num1) < parseInt(num2)){
-        $("#currentTotal").text(currentTotal);
         losses++;
         $("#losses").text("Losses: " + losses);
-        $("#loser").html("<p>You lose!</p>");
+        alert("Loser!");
         reset();
     }
     if(parseInt(num1) === parseInt(num2)){
-        $("#currentTotal").text(currentTotal);
         wins++;
         $("#wins").text("Wins: " + wins);
-        $("#winner").html("<p>You Win!</p>");
+        alert("Winner!");
         reset();
     }
 }
@@ -50,8 +46,6 @@ function reset(){
     $("#currentTotal").text(currentTotal);
     var randomNumber = Math.floor(Math.random() * 120) + 19;
     $("#randomNumber").text(randomNumber);
-    $("#loser").html("<p></p>");
-    $("#winner").html("<p></p>");
     setCrystals();
 }
 $("#redCrystal").on("click", function(){
