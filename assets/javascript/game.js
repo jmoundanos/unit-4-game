@@ -31,13 +31,13 @@ function playGame(currentTotal){
     if(parseInt(num1) < parseInt(num2)){
         losses++;
         $("#losses").text("Losses: " + losses);
-        alert("Loser!");
+        alert("Lose!");
         reset();
     }
     if(parseInt(num1) === parseInt(num2)){
         wins++;
         $("#wins").text("Wins: " + wins);
-        alert("Winner!");
+        alert("Win!");
         reset();
     }
 }
